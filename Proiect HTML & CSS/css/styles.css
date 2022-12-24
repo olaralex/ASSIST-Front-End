@@ -1,0 +1,43 @@
+/* Header + Banner + Nav */
+
+/* Header */
+header .logo h1,
+header .logo a
+{
+    display: inline-block;
+    margin: 0%;
+}
+.logo a img{
+    width: 5rem;
+    height: auto;
+    border-radius: 50%;
+}
+.logo h1{
+    color: aliceblue;
+}
+
+/* Banner */
+.banner img{
+    object-fit: cover;
+    max-width: 100%;
+    height: auto;
+}
+.welcome{
+    display: flex;
+    justify-content: center;
+}
+.welcome h3{
+    color: aliceblue;
+}
+
+/* Nav Bar */
+nav ul li{
+    text-decoration: none;
+}
+nav ul li a :hover{
+    text-decoration: none;
+}
+
+/* Main + Form + Footer */
+
+/* Main */
