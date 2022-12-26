@@ -31,7 +31,7 @@
     <!-- Banner -->
     <section class="banner bg-primary bg-opacity-75">
         <img src="images/Cover_Image.png" alt="cover image">
-        <div class="container welcome">
+        <div class="container welcome p-3">
             <h3>
                 Welcome to our Website
             </h3>
@@ -39,8 +39,8 @@
     </section>
 
     <!-- Nav Bar -->
-    <nav>
-        <ul>
+    <nav class="bg-secondary">
+        <ul class="p-2">
             <li>
                 <a href="about.html" class="about">About Us</a>
             </li>
@@ -54,44 +54,83 @@
     </nav>
 
     <!-- Main -->
-    <main>
+    <main class="p-3 bg-light">
         <div class="container">
             <article>
-                <h3>
+                <h3 class="py-3">
                     Goods of combat sports
                 </h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa animi, itaque ipsum eos aut expedita quia mollitia! Reprehenderit, dolore. Eligendi hic non architecto illo totam doloremque animi praesentium nisi alias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ratione quasi magni quis esse exercitationem odio quam ipsa nemo similique. Consequatur in ratione praesentium dolores quam recusandae, nulla libero ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum sequi fugiat numquam natus atque odit deserunt facilis. Eveniet illum dolores enim reiciendis aperiam veritatis autem officiis deserunt tempore ipsam.
-                </p>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 p-2">
+                        <h5>
+                            BJJ
+                        </h5>
+                        <p>
+                            &emsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa animi, itaque ipsum eos aut expedita quia mollitia! Reprehenderit, dolore. Eligendi hic non architecto illo totam doloremque animi praesentium nisi alias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ratione quasi magni quis esse exercitationem odio quam ipsa nemo similique. Consequatur in ratione praesentium dolores quam recusandae, nulla libero ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum sequi fugiat numquam natus atque odit deserunt facilis. Eveniet illum dolores enim reiciendis aperiam veritatis autem officiis deserunt tempore ipsam.
+                        </p>
+                        <img src="images/BJJ_Fight.png" alt="bjj_fight">
+                    </div>
+                    <br>
+                    <div class="col-lg-6 col-md-12 p-2">
+                        <h5>
+                            Box
+                        </h5>
+                        <p>
+                            &emsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa animi, itaque ipsum eos aut expedita quia mollitia! Reprehenderit, dolore. Eligendi hic non architecto illo totam doloremque animi praesentium nisi alias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ratione quasi magni quis esse exercitationem odio quam ipsa nemo similique. Consequatur in ratione praesentium dolores quam recusandae, nulla libero ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum sequi fugiat numquam natus atque odit deserunt facilis. Eveniet illum dolores enim reiciendis aperiam veritatis autem officiis deserunt tempore ipsam.
+                        </p>
+                        <img src="images/Boxing_Fight.png" alt="box_fight">
+                    </div>
+                </div>
+                <!--
                 <ul class="images">
                     <li>
+                        <h5 class="text-center">
+                            BJJ
+                        </h5>
+                        <p>
+                            &emsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa animi, itaque ipsum eos aut expedita quia mollitia! Reprehenderit, dolore. Eligendi hic non architecto illo totam doloremque animi praesentium nisi alias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ratione quasi magni quis esse exercitationem odio quam ipsa nemo similique. Consequatur in ratione praesentium dolores quam recusandae, nulla libero ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum sequi fugiat numquam natus atque odit deserunt facilis. Eveniet illum dolores enim reiciendis aperiam veritatis autem officiis deserunt tempore ipsam.
+                        </p>
                         <img src="images/BJJ_Fight.png" alt="bjj_fight">
                     </li>
                     <li>
+                        <h5 class="text-center">
+                            Box
+                        </h5>
+                        <p>
+                            &emsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa animi, itaque ipsum eos aut expedita quia mollitia! Reprehenderit, dolore. Eligendi hic non architecto illo totam doloremque animi praesentium nisi alias! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero ratione quasi magni quis esse exercitationem odio quam ipsa nemo similique. Consequatur in ratione praesentium dolores quam recusandae, nulla libero ea! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, voluptatum sequi fugiat numquam natus atque odit deserunt facilis. Eveniet illum dolores enim reiciendis aperiam veritatis autem officiis deserunt tempore ipsam.
+                        </p>
                         <img src="images/Boxing_Fight.png" alt="box_fight">
                     </li>
                 </ul>
+                -->
             </article>
         </div>
     </main>
 
     <!-- Form -->
-    <section class="form">
-        <h4>Join Now</h4>
-        <form>
-            <div class="form-group">
-              <label for="exampleInputEmail1">Email address</label>
-              <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+    <section class="p-3 form bg-light">
+        <div class="container">
+            <h4>
+                Join Our Newsletter
+            </h4>
+            <form>
+                <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-light">
-        <h4>
-            Copywrite &copy
-        </h4>
+    <footer class="p-3 bg-secondary">
+        <div class="container text-center">
+            <h4 class="copywrite">
+                Copywrite &copy
+            </h4>
+        </div>
     </footer>
 </body>
 </html>
