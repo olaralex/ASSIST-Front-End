@@ -135,52 +135,150 @@
 
 // Objescts
 
-let car = {
-    // literal
-    combustion: 'gas',
-    fabYear: 2014,
-    brand: 'Mercedes-Benz',
-    color: 'white',
-    specs: [
-        {specName: '3.0L engine', cost: '$$$'},
-        {specName: 'xenon lights', cost: '$'},
-        {specName: '4x4', cost: '$$'}
-    ],
-    // methods
-    turnOn: function() {
-        console.log('the car has turned ON!');
-    },
-    turnOff: function() {
-        console.log('the car has turned OFF!');
-    },
-    showSpecs: function() {
-        console.log('Specs of the car and the price are:')
-        this.specs.forEach(function(spec){
-            console.log(spec.specName + ', ' + spec.cost);
-        });
-    }
-};
+// let car = {
+//     // literal
+//     combustion: 'gas',
+//     fabYear: 2014,
+//     brand: 'Mercedes-Benz',
+//     color: 'white',
+//     specs: [
+//         {specName: '3.0L engine', cost: '$$$'},
+//         {specName: 'xenon lights', cost: '$'},
+//         {specName: '4x4', cost: '$$'}
+//     ],
+//     // methods
+//     turnOn: function() {
+//         console.log('the car has turned ON!');
+//     },
+//     turnOff: function() {
+//         console.log('the car has turned OFF!');
+//     },
+//     showSpecs: function() {
+//         console.log('Specs of the car and the price are:')
+//         this.specs.forEach(function(spec){
+//             console.log(spec.specName + ', ' + spec.cost);
+//         });
+//     }
+// };
 
-console.log(car);
+// console.log(car);
 
-car.turnOn();
+// car.turnOn();
 
-car.showSpecs();
+// car.showSpecs();
 
-car.turnOff();
+// car.turnOff();
 
 // Relative values
 
-person = {
-    age: 18,
-    nationality: 'Romanian'
-}
+// person = {
+//     age: 18,
+//     nationality: 'Romanian'
+// }
 
-const personOne = person;
-const personTwo = personOne;
+// const personOne = person;
+// const personTwo = personOne;
 
-console.log(personOne, personTwo);
+// console.log(personOne, personTwo);
 
-personOne.age = 20;
+// personOne.age = 20;
 
-console.log(personOne, personTwo);
+// console.log(personOne, personTwo);
+
+// DOM
+
+// Query Selector
+
+const head2 = document.querySelector('h2');
+
+console.log(head2);
+
+const paragraph = document.querySelector('p');
+
+console.log(paragraph);
+
+const warning = document.querySelector('.warning');
+
+console.log(warning);
+
+const divs = document.querySelectorAll('div');
+
+console.log(divs);
+
+divs.forEach(function(div){
+    console.log(div);
+});
+
+// ID, Class, Tag Selector
+
+const divTitle1 = document.getElementById('first-dom');
+
+console.log(divTitle1);
+
+const warningsClass = document.getElementsByClassName('warning');
+
+console.log(warningsClass);
+
+const allParagraphs = document.getElementsByTagName('p');
+
+console.log(allParagraphs);
+
+// Change Text / HTML
+
+const changeText = document.querySelector('.third');
+
+changeText.innerText = 'Text is changed'
+
+console.log(changeText.innerText);
+
+const changeHTML = document.querySelector('.third');
+
+changeHTML.innerHTML += '<h1>Html is changed</h1>';
+
+console.log(changeHTML)
+
+// Insert values
+
+const cars = ['Mercedes-Benz', 'Toyota', 'Rivian'];
+
+const list = document.querySelector('.numbers');
+
+cars.forEach(car => {
+    list.innerHTML += `<li>${car}</li>`;
+});
+
+// Insert content for HTML
+
+const link = document.querySelector('.insert a');
+
+link.setAttribute('href', 'https://github.com/olaralex?tab=overview&from=2022-12-01&to=2022-12-31');
+
+link.innerHTML = 'A link to something cool!';
+
+// Add classes
+
+const insertClass = document.querySelector('.insert p');
+
+insertClass.innerText = 'Add and remove classes';
+
+insertClass.classList.add('warning');
+insertClass.classList.remove('warning');
+insertClass.classList.add('info');
+insertClass.classList.remove('info');
+insertClass.classList.toggle('info');
+insertClass.classList.toggle('info');
+
+// Test
+
+const test = document.querySelectorAll('.test p');
+
+//console.log(test);
+
+test.forEach(miniTest => {
+    if(miniTest.textContent.includes('warning') === true){
+        miniTest.classList.add('warning');
+    }
+    if(miniTest.textContent.includes('info') === true){
+        miniTest.classList.add('info');
+    }
+});
