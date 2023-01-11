@@ -189,96 +189,96 @@
 
 // Query Selector
 
-const head2 = document.querySelector('h2');
+// const head2 = document.querySelector('h2');
 
-console.log(head2);
+// console.log(head2);
 
-const paragraph = document.querySelector('p');
+// const paragraph = document.querySelector('p');
 
-console.log(paragraph);
+// console.log(paragraph);
 
-const warning = document.querySelector('.warning');
+// const warning = document.querySelector('.warning');
 
-console.log(warning);
+// console.log(warning);
 
-const divs = document.querySelectorAll('div');
+// const divs = document.querySelectorAll('div');
 
-console.log(divs);
+// console.log(divs);
 
-divs.forEach(function(div){
-    console.log(div);
-});
+// divs.forEach(function(div){
+//     console.log(div);
+// });
 
 // ID, Class, Tag Selector
 
-const divTitle1 = document.getElementById('first-dom');
+// const divTitle1 = document.getElementById('first-dom');
 
-console.log(divTitle1);
+// console.log(divTitle1);
 
-const warningsClass = document.getElementsByClassName('warning');
+// const warningsClass = document.getElementsByClassName('warning');
 
-console.log(warningsClass);
+// console.log(warningsClass);
 
-const allParagraphs = document.getElementsByTagName('p');
+// const allParagraphs = document.getElementsByTagName('p');
 
-console.log(allParagraphs);
+// console.log(allParagraphs);
 
 // Change Text / HTML
 
-const changeText = document.querySelector('.third');
+// const changeText = document.querySelector('.third');
 
-changeText.innerText = 'Text is changed'
+// changeText.innerText = 'Text is changed'
 
-console.log(changeText.innerText);
+// console.log(changeText.innerText);
 
-const changeHTML = document.querySelector('.third');
+// const changeHTML = document.querySelector('.third');
 
-changeHTML.innerHTML += '<h1>Html is changed</h1>';
+// changeHTML.innerHTML += '<h1>Html is changed</h1>';
 
-console.log(changeHTML)
+// console.log(changeHTML)
 
 // Insert values
 
-const cars = ['Mercedes-Benz', 'Toyota', 'Rivian'];
+// const cars = ['Mercedes-Benz', 'Toyota', 'Rivian'];
 
-const list = document.querySelector('.numbers');
+// const list = document.querySelector('.numbers');
 
-cars.forEach(car => {
-    list.innerHTML += `<li>${car}</li>`;
-});
+// cars.forEach(car => {
+//     list.innerHTML += `<li>${car}</li>`;
+// });
 
 // Insert content for HTML
 
-const link = document.querySelector('.insert a');
+// const link = document.querySelector('.insert a');
 
-link.setAttribute('href', 'https://github.com/olaralex?tab=overview&from=2022-12-01&to=2022-12-31');
+// link.setAttribute('href', 'https://github.com/olaralex?tab=overview&from=2022-12-01&to=2022-12-31');
 
-link.innerHTML = 'A link to something cool!';
+// link.innerHTML = 'A link to something cool!';
 
 // Add classes
 
-const insertClass = document.querySelector('.insert p');
+// const insertClass = document.querySelector('.insert p');
 
-insertClass.innerText = 'Add and remove classes';
+// insertClass.innerText = 'Add and remove classes';
 
-insertClass.classList.add('warning');
-insertClass.classList.remove('warning');
-insertClass.classList.add('info');
-insertClass.classList.remove('info');
-insertClass.classList.toggle('info');
-insertClass.classList.toggle('info');
+// insertClass.classList.add('warning');
+// insertClass.classList.remove('warning');
+// insertClass.classList.add('info');
+// insertClass.classList.remove('info');
+// insertClass.classList.toggle('info');
+// insertClass.classList.toggle('info');
 
 // Test
 
-const test = document.querySelectorAll('.test p');
+// const test = document.querySelectorAll('.test p');
 
 //console.log(test);
 
-test.forEach(miniTest => {
-    if(miniTest.textContent.includes('warning') === true){
-        miniTest.classList.add('warning');
-    }
-    if(miniTest.textContent.includes('info') === true){
-        miniTest.classList.add('info');
-    }
-});
+// test.forEach(miniTest => {
+//     if(miniTest.textContent.includes('warning') === true){
+//         miniTest.classList.add('warning');
+//     }
+//     if(miniTest.textContent.includes('info') === true){
+//         miniTest.classList.add('info');
+//     }
+// });
